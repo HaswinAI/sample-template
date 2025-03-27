@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <header>
+        <h1>Prediction Result</h1>
+    </header>
+    
+    <div class="container">
+        <h2>The uploaded image is predicted as:</h2>
+        <p><strong>{{ prediction }}</strong></p>
+        
+        <a href="/">Go back to upload another image</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AI in Radiography. All rights reserved.</p>
+    </footer>
+</body>
+</html>

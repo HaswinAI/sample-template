@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>AI in Radiography: Pneumonia Detection</h1>
+    </header>
+
+    <div class="container">
+        <h2>Upload Chest X-ray Image for Pneumonia Detection</h2>
+        
+        <form action="/pneumonia_detection" method="POST" enctype="multipart/form-data">
+            <label for="file">Select an X-ray image:</label>
+            <input type="file" id="file" name="file" accept="image/*" required>
+            
+            <button type="submit">Upload and Analyze</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AI in Radiography</p>
+    </footer>
+</body>
+</html>
